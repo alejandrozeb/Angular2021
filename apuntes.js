@@ -23,5 +23,20 @@ ng --version
 vemos la version de angular 
 angularCLI 12.0
 los cambios son menores entre versiones
+-----Primera aplicacion ----------
+ng new mi-primera-app
+guion medio o bajo luego no se recmienda caracteres especiales
+y
+modo estricto
+n
+roouting 
+CSS
+formato de hojas de estilo
+ debe mostrar que los paquetes se crearon correctamente se crean varios archivos pero al desplegar en produccion no se usan tantos.
+ 
+ ng serve -o 
+
+ se abre un servidor y se abre un navegador asegurate de estar en la ruta del proyecto, en el puerto 4200 y es uno de desarrollo
+
 
 */
