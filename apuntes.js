@@ -52,4 +52,12 @@ formato de hojas de estilo
 angular.json
 podemos agregar css y scripts personalizados
 
+extensiones en vs
+angular services
+angular files //para crear mas facil
+angular support
+angular2 typescrip emmet para escribir html
+bootsstrap 4
+
+
 */
