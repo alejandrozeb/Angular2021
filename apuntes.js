@@ -37,6 +37,7 @@ formato de hojas de estilo
  ng serve -o 
 
  se abre un servidor y se abre un navegador asegurate de estar en la ruta del proyecto, en el puerto 4200 y es uno de desarrollo
+ crtl +c para dar de baja el servidor
 
 
 */
