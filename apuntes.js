@@ -58,6 +58,15 @@ angular files //para crear mas facil
 angular support
 angular2 typescrip emmet para escribir html
 bootsstrap 4
+---main ts---
+
+podemos ver que app module indica que esta levantando un modulo en app.module.ts podemos encontrar como se exportando la clase,
+
+los decoradores permite aañdir anotaciones y metadatos o cambiar el comportamiento de clases, propiedades, metodos, parametros y accesors
+
+tenemos un decorador llamado ngModule
+nos interesa saber el bootstrap que extrae de donde esta la clase.
+
 
 
 */
