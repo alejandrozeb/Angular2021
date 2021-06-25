@@ -39,5 +39,17 @@ formato de hojas de estilo
  se abre un servidor y se abre un navegador asegurate de estar en la ruta del proyecto, en el puerto 4200 y es uno de desarrollo
  crtl +c para dar de baja el servidor
 
+ En app ts podemos encontrar el selector llamado app-root y es el tag de inserion de nuestro componente. 
+
+ selector 
+ temeplateUrl   //cual es la plantilla que se va a utilizar 
+ styleUrls  //cual es la hoja de estilos a utilizar
+
+ por cada componente podemos agregar su css
+ ademas definimos una clase con variables 
+ que podemos usar en nuestras  vistas html con {{}}
+
+angular.json
+podemos agregar css y scripts personalizados
 
 */
