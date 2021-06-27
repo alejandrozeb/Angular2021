@@ -71,6 +71,10 @@ nos interesa saber el bootstrap que extrae de donde esta la clase.
 es bueno crear una carpeta por componente
 manual 
 
+cada componente(personacomopnent.ts) lo registramos en app.module en el decorador ngModule
+
+podemos usar del componente sus variables y sus estilos
+
 
 
 
