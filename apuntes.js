@@ -67,6 +67,11 @@ los decoradores permite aañdir anotaciones y metadatos o cambiar el comportamie
 tenemos un decorador llamado ngModule
 nos interesa saber el bootstrap que extrae de donde esta la clase.
 
+---crear componente---
+es bueno crear una carpeta por componente
+manual 
+
+
 
 
 */
