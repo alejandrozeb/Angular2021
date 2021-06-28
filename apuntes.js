@@ -87,4 +87,11 @@ que agrega un modo ngOnInit y un constructor.
 ademas agrega el decorador component
 ademas ya se regitra el app module de manera automatica
 
+--componentes in line-----
+Es recomendable cuando la inforamcion es pequeña
+
+componentes inline
+ng g c persona -s -t
+-s el css -t el html indicamos que seran inline
+
 */
