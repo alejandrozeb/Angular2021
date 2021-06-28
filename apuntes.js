@@ -94,4 +94,15 @@ componentes inline
 ng g c persona -s -t
 -s el css -t el html indicamos que seran inline
 
+--instalar bootstrap 4 con el cli ---
+npm install bootstrap --save
+en la version 4 se usa jquery y popper pero en la 5 ya no son necesarios
+npm install jquery --save
+npm install popper.js --save
+
+ahora se debe configurar en angular
+en angular json en styles cargamos el css min de boostrap
+en scripts el jquery, el popper , y el bootstrap que estan referenciados en node_modules bootstap
+ademas se debe verificar que estan referenciando en seccion build del angular.json 
+existe otra para los test.
 */
