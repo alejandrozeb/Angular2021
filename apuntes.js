@@ -105,4 +105,9 @@ en angular json en styles cargamos el css min de boostrap
 en scripts el jquery, el popper , y el bootstrap que estan referenciados en node_modules bootstap
 ademas se debe verificar que estan referenciando en seccion build del angular.json 
 existe otra para los test.
+
+--agreagdno estilos----
+podemos hacer referencia a varios archivos css, se referencia en el decorador.
+tambien se puede hacer inline con la propiedad styles
+ambos atributos son arreglos
 */
