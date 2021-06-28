@@ -73,9 +73,18 @@ manual
 
 cada componente(personacomopnent.ts) lo registramos en app.module en el decorador ngModule
 
-podemos usar del componente sus variables y sus estilos
+podemos usar del componente sus variables y sus estilos--creando componento con el cli de angular----
 
+ng generate component persona
 
+ng gc persona 
 
+para crear el comopnente persona en largo y simplificado
+ se crea el html, spec(test), ts y css
+
+en ts define la clase e implementa una interface
+que agrega un modo ngOnInit y un constructor.
+ademas agrega el decorador component
+ademas ya se regitra el app module de manera automatica
 
 */
