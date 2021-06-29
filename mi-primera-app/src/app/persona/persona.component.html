@@ -4,4 +4,9 @@
     edad: {{edad + 1}} <br>
     puesto: {{getPuesto()}} <br>
 </p>
-
+<!-- agarra el evente -->
+<div (keyup)='0'> <!-- agrega un listenner -->
+    <label >Repetidor</label>
+    <!-- asignamos un nombre a este input -->
+        <input #entrada />{{entrada.value}}
+</div>

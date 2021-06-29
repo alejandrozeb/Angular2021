@@ -119,6 +119,9 @@ la declaramosen componentts y lo usamos en conponent html con {{}}
 adentro de las interpolaciones se puede usar ecxpreciones{{numero +5}}
 se sumara
 
+--templte reference--
+podemos declarar vatiables en una plantillasy mostrar
+
 
 
 */
