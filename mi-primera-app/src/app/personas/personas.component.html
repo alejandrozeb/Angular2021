@@ -2,6 +2,10 @@
   <div class="row">
     <div class="col">
       <h1>Listado de personas</h1>
+      <!-- deshabilitarremos el boton y manipularemos con property binding -->
+      <button type="button" class="btn btn-primary" [disabled]='deshabilitar'>
+        Agregar Persona
+      </button>
       <app-persona></app-persona>
     </div>
   </div>

@@ -122,6 +122,11 @@ se sumara
 --templte reference--
 podemos declarar vatiables en una plantillasy mostrar
 
+--property binding---
+permite asignar valores a los tags html []
+agregamos un boton en ts con un valor 
+[<<atributohtml>>]='<<propiedad del ts>>';
+podemos manipular el valor de una propiedad de un tag y referenciar con atributo de la clase de conponent ts
 
 
 */
