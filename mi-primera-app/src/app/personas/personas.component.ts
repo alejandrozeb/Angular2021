@@ -11,7 +11,17 @@ import { Component } from "@angular/core";
 export class PersonasComponent{
     deshabilitar = false;
     mensaje:string = 'no se ha agregado ninguna persona';
+    titulo:string = '';
      agregarPersona(){
         this.mensaje = 'Persona agregada';
+    }
+
+    modificarTitulo(event: Event){
+        console.log('ingesando al metodo');
+    //debe ser de tipo event
+    this.titulo = (<HTMLInputElement>event.target).value;
+    //target es el elemnto html debemos hacer un parse y sacamos el value
+    //por cada cambio en el input se ejecuta este metodo
+
     }
 }

@@ -136,4 +136,7 @@ referenciamos un evento en la vista con un metodo de component .ts
 ademas los eventos no son os mismos que js 
 onclick js
 click Angular
+
+--argumentos con event binding----
+
 */
