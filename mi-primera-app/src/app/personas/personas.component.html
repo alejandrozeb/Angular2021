@@ -14,7 +14,7 @@
 
       <label>Titulo Persona</label>
       <input type="text" class="form-control" 
-      (input)='modificarTitulo($event)' >
+      [(ngModel)]='titulo' >
       <!-- en event capturemos el input  -->
       {{titulo}}
     </div>

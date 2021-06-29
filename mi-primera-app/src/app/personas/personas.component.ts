@@ -11,11 +11,12 @@ import { Component } from "@angular/core";
 export class PersonasComponent{
     deshabilitar = false;
     mensaje:string = 'no se ha agregado ninguna persona';
-    titulo:string = '';
+    titulo:string = 'Ingeniero';
      agregarPersona(){
         this.mensaje = 'Persona agregada';
     }
-
+    
+    //ya no los necesitamos con two way binding
     modificarTitulo(event: Event){
         console.log('ingesando al metodo');
     //debe ser de tipo event

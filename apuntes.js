@@ -138,5 +138,10 @@ onclick js
 click Angular
 
 --argumentos con event binding----
+--dos formas de event binding------
+two way binding
+de htmml a ts y de ts al html
 
+debeos agregar un module formsMOdule
+de node_modules en app modules
 */
