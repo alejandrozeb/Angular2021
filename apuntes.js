@@ -128,5 +128,12 @@ agregamos un boton en ts con un valor
 [<<atributohtml>>]='<<propiedad del ts>>';
 podemos manipular el valor de una propiedad de un tag y referenciar con atributo de la clase de conponent ts
 
+--event binding--
+escuchamos los eventos html y podemos capturarlos
+referenciamos un evento en la vista con un metodo de component .ts
+(<<evento>>)='<<nombre metodo>>()'
 
+ademas los eventos no son os mismos que js 
+onclick js
+click Angular
 */

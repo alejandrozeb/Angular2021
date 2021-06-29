@@ -3,9 +3,13 @@
     <div class="col">
       <h1>Listado de personas</h1>
       <!-- deshabilitarremos el boton y manipularemos con property binding -->
-      <button type="button" class="btn btn-primary" [disabled]='deshabilitar'>
+      <button type="button" class="btn btn-primary" 
+      [disabled]="deshabilitar"
+      (click)='agregarPersona()'
+      >
         Agregar Persona
       </button>
+      <p>{{mensaje}}</p>
       <app-persona></app-persona>
     </div>
   </div>
