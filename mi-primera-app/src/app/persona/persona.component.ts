@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-persona',
@@ -11,5 +11,11 @@ export class PersonaComponent {
   nombre: string = 'Juan';
   apellido: string = 'Perez';
   edad: number =28;  
+
+  //si definimos como privado no funcionara
+  private puesto: string = "Programador";
+  getPuesto(){
+    return this.puesto;
+  }
 
 }

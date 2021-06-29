@@ -116,6 +116,9 @@ podemos declarar unu avariable y usarla
 {{<<variable>>}}
 la declaramosen componentts y lo usamos en conponent html con {{}}
 
+adentro de las interpolaciones se puede usar ecxpreciones{{numero +5}}
+se sumara
+
 
 
 */
