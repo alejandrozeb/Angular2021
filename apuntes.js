@@ -110,4 +110,12 @@ existe otra para los test.
 podemos hacer referencia a varios archivos css, se referencia en el decorador.
 tambien se puede hacer inline con la propiedad styles
 ambos atributos son arreglos
+
+--interpolacion---
+podemos declarar unu avariable y usarla
+{{<<variable>>}}
+la declaramosen componentts y lo usamos en conponent html con {{}}
+
+
+
 */
