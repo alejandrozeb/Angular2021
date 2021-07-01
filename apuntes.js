@@ -144,4 +144,12 @@ de htmml a ts y de ts al html
 
 debeos agregar un module formsMOdule
 de node_modules en app modules
+
+
+---NGif---
+pdemos agregar un if con angular a la vista
+*ngif="condition"
+ademas no tenemos que agregar logica devolvemos un false el tag no se muestra por true si se muestra
+ademas el elemento se agrega despues de que pasa el evento mientras no cambie el estado no se agrega al DOM
+
 */

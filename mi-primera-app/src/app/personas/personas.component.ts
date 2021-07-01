@@ -12,7 +12,10 @@ export class PersonasComponent{
     deshabilitar = false;
     mensaje:string = 'no se ha agregado ninguna persona';
     titulo:string = 'Ingeniero';
+    mostrar = false;
+
      agregarPersona(){
+        this.mostrar = true;
         this.mensaje = 'Persona agregada';
     }
     
