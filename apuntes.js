@@ -156,4 +156,7 @@ tambien podemos agregar un else
 <#elseBlock>
 
 podemos usarlo como estado por defecto y con el cambio recien ejecutamos
+
+----perosna listado---
+npm i bootstrap jquery popper.js --save para instalar todo
 */
