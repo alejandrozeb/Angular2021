@@ -151,5 +151,9 @@ pdemos agregar un if con angular a la vista
 *ngif="condition"
 ademas no tenemos que agregar logica devolvemos un false el tag no se muestra por true si se muestra
 ademas el elemento se agrega despues de que pasa el evento mientras no cambie el estado no se agrega al DOM
+tambien podemos agregar un else 
+*ngif="condition: else elseBlock"
+<#elseBlock>
 
+podemos usarlo como estado por defecto y con el cambio recien ejecutamos
 */
