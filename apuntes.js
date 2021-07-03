@@ -159,4 +159,9 @@ podemos usarlo como estado por defecto y con el cambio recien ejecutamos
 
 ----perosna listado---
 npm i bootstrap jquery popper.js --save para instalar todo
+
+-----directivas---
+@input nos permite recibir informacion del componente padre al hijo
+@output del hijo al padre
+decorador
 */
