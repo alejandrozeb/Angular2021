@@ -164,4 +164,13 @@ npm i bootstrap jquery popper.js --save para instalar todo
 @input nos permite recibir informacion del componente padre al hijo
 @output del hijo al padre
 decorador
+
+ng g c persona --skipTests=true
+evitamos el archivo test al crear el componente
+
+"strictPropertyInitialization": false
+
+agregamos al tsconfig.json
+para que no se tenga que inicializar todos los objetos
+
 */
