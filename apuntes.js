@@ -172,5 +172,10 @@ evitamos el archivo test al crear el componente
 
 agregamos al tsconfig.json
 para que no se tenga que inicializar todos los objetos
+---con @input---
+podemos enviar informacion del padre al hijo
+
+---con @output---
+podemos enviar informacion del hijo al padre
 
 */
