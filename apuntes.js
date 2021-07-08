@@ -178,4 +178,7 @@ podemos enviar informacion del padre al hijo
 ---con @output---
 podemos enviar informacion del hijo al padre
 
+---referencias localoes---
+solo podemos envir informacin de la plantilla al componente
+
 */
