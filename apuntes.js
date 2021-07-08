@@ -184,4 +184,16 @@ solo podemos envir informacin de la plantilla al componente
 -----viewChild y referencias locales-------
 usamos un decorador para recuperar la informacion
 
+----SERVICIOS--------------
+un sercivio representa un clase de ts que pude ser usada por varias clases
+son metodos que se centalizan comparte informacion
+normalmente devuelve datos de terceros
+se usan con inyeccion de dependencias los usamos en el contructor
+ademas de inyectarlo debemos definir un proveedor en el decorador component
+de las misma manera podemos usar la misma tecnica
+
+pero tambien podemos hacerlo singleton
+registrando como provider en appmodule en el decorador @ngmodule aggando providers
+asi la instacia se crea a nivel app y no solo locales en componentes
+
 */
