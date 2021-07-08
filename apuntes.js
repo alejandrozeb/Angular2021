@@ -181,4 +181,7 @@ podemos enviar informacion del hijo al padre
 ---referencias localoes---
 solo podemos envir informacin de la plantilla al componente
 
+-----viewChild y referencias locales-------
+usamos un decorador para recuperar la informacion
+
 */
