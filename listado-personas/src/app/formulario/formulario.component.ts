@@ -43,7 +43,7 @@ export class FormularioComponent {
   OnAgregarPersona(){
     let persona1 = new Persona(this.nombreViewChild.nativeElement.value, this.apellidoViewChild.nativeElement.value);
 
-    this.loggingService.enviaMensajeAConsola("enviamos persona con nombre " + persona1.nombre +" " + persona1.apellido);
+    //this.loggingService.enviaMensajeAConsola("enviamos persona con nombre " + persona1.nombre +" " + persona1.apellido);
     this.personasService.agregarPersona(persona1);
   }
 
