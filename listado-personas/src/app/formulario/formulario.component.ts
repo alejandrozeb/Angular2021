@@ -22,6 +22,12 @@ export class FormularioComponent {
   constructor(private loggingService:LogginService,
               private personasService:PersonaService){
     //angular se encarga de crear una instancia
+
+    this.personasService.saludar.subscribe(
+      (indice: number) => alert("el indice es : "+indice)
+    );
+
+    //nos suscribimo al emisor
   }
 
   agregarPersona(nombreRef:HTMLInputElement, apellidoRef:HTMLInputElement){

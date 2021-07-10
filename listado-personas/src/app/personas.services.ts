@@ -1,4 +1,4 @@
-import {Injectable} from "@angular/core"
+import {EventEmitter, Injectable} from "@angular/core"
 import { LogginService } from "./LogginService.service";
 import { Persona } from "./persona.model";
 //indicamos que inyectaremos otro servicio
@@ -10,6 +10,10 @@ export class PersonaService{
         new Persona("Laura","Juarez"),
         new Persona("Alejandro","Zeballos")
       ];
+    //comunicacion entre componentes
+    saludar = new EventEmitter<number>();
+
+
     //inyectando un servicio
 
     constructor(private logginService: LogginService ){    }
