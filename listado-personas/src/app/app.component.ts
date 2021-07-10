@@ -28,9 +28,9 @@ export class AppComponent implements OnInit {
 
   //las personas las agregamos en el servicio
 
-  personaAgregada(persona: Persona){
+ /*  personaAgregada(persona: Persona){
     //this.logginService.enviaMensajeAConsola("desde app");
     this.personaService.agregarPersona(persona);
-  }
+  } */
 
 }
