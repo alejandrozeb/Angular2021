@@ -1,7 +1,20 @@
 import { Ingreso } from './ingresos.model';
 export class IngresoService {
   ingresos: Ingreso[] = [
-      new Ingreso('Salario', 2100),
-      new Ingreso('Venta coche', 1.500)
-    ];
+    new Ingreso('Salario', 4000),
+    new Ingreso('Venta coche', 500),
+  ];
+
+  total() {
+    let total: number = this.sumar();
+    return total;
+  }
+
+  private sumar(): number {
+    let sumatoria: number = 0;
+    this.ingresos.forEach((ingreso) => {
+      sumatoria = sumatoria + ingreso.cantidad;
+    });
+    return sumatoria;
+  }
 }
