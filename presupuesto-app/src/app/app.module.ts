@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { EgresoService } from './Egreso.Service';
+import { IngresoService } from './Ingreso.Service';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [EgresoService, IngresoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
