@@ -12,12 +12,12 @@ export class FormularioComponent {
   //decorador a padre
  // @Output() personaCreada= new EventEmitter<Persona>();
   //debe ser de angular el event emitter
-  /* nombreInput:string = '';
-  apellidoInput:string = ''; */
+  nombreInput:string = '';
+  apellidoInput:string = '';
 
   //decorador local reference
-  @ViewChild('nombreRef') nombreViewChild:ElementRef;
-  @ViewChild('apellidoRef') apellidoViewChild:ElementRef;
+  //@ViewChild('nombreRef') nombreViewChild:ElementRef;
+ // @ViewChild('apellidoRef') apellidoViewChild:ElementRef;
 
   constructor(private loggingService:LogginService,
               private personasService:PersonaService){
@@ -39,18 +39,19 @@ export class FormularioComponent {
     this.personasService.agregarPersona(persona1);
   }
   agregarPersonaViewChild(){
-    let persona1 = new Persona(this.nombreViewChild.nativeElement.value, this.apellidoViewChild.nativeElement.value);
+    let persona1 = new Persona(this.nombreInput, this.apellidoInput);
     //usando el servicio
     this.loggingService.enviaMensajeAConsola("enviamos persona: "+persona1.nombre +" "+persona1.apellido);
     //recuperamos el valor
     //this.personaCreada.emit(persona1);
+    this.personasService.agregarPersona(persona1);
   }
 
-  OnAgregarPersona(){
+ /*  OnAgregarPersona(){
     let persona1 = new Persona(this.nombreViewChild.nativeElement.value, this.apellidoViewChild.nativeElement.value);
 
     //this.loggingService.enviaMensajeAConsola("enviamos persona con nombre " + persona1.nombre +" " + persona1.apellido);
     this.personasService.agregarPersona(persona1);
-  }
+  } */
 
 }
