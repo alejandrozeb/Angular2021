@@ -196,4 +196,6 @@ pero tambien podemos hacerlo singleton
 registrando como provider en appmodule en el decorador @ngmodule aggando providers
 asi la instacia se crea a nivel app y no solo locales en componentes
 
+----ASSETS-----
+todos los archivos estaticos van a assets
 */
