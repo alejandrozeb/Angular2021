@@ -10,6 +10,10 @@ export class IngresoService {
     return total;
   }
 
+  agregarIngreso(ingreso:Ingreso){
+    this.ingresos.push(ingreso);
+  }
+
   private sumar(): number {
     let sumatoria: number = 0;
     this.ingresos.forEach((ingreso) => {

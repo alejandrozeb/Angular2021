@@ -12,7 +12,10 @@ export class EgresoService {
     
     return total;
   }
-
+  
+  agregarEgreso(egreso:Egreso){
+    this.egresos.push(egreso);
+  }
   private sumar(): number {
     let sumatoria: number = 0;
     this.egresos.forEach((egreso) => {
