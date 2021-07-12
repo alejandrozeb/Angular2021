@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EgresoService } from '../Egreso.Service';
 import { IngresoService } from '../Ingreso.Service';
+import { Ingreso } from '../ingresos.model';
 
 @Component({
   selector: 'app-ingreso',
@@ -9,14 +10,14 @@ import { IngresoService } from '../Ingreso.Service';
 })
 export class IngresoComponent implements OnInit {
   
-    
+  ingresos: Ingreso[];
   constructor(
-    private ingresosService: IngresoService,
-    private egresosService: EgresoService
+    private ingresosService: IngresoService
   ) { }
 
   ngOnInit(): void {
-   
+   this.ingresos = this.ingresosService.ingresos;
+   console.log(this.ingresos);
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EgresoService } from '../Egreso.Service';
 import { IngresoService } from '../Ingreso.Service';
 
@@ -9,9 +9,11 @@ import { IngresoService } from '../Ingreso.Service';
 })
 export class CabeceroComponent implements OnInit {
 
-  total:number;
-  ingresos:number;
-  egresos:number;
+  
+  @Input() presupuestoTotal:number;
+  @Input() ingresoTotal:number;
+  @Input() egresoTotal:number;
+  @Input() porcentajeTotal:number;
     
   constructor(
     private ingresosService: IngresoService,
@@ -19,9 +21,6 @@ export class CabeceroComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.egresos=this.egresosService.total();
-    this.ingresos = this.ingresosService.total();
-    this.total = this.ingresos - this.egresos;
   }
 
 }

@@ -201,4 +201,7 @@ todos los archivos estaticos van a assets
 
 -----form---
 al agregar un form se debe añadir el name igual que el ngmodel
+
+----cambios de data---
+si se afecta auna variables de app componente se recarga la pagina
 */

@@ -7,9 +7,7 @@ export class EgresoService {
   ];
 
   total() {
-    let total: number = this.sumar();
-    console.log(total);
-    
+    let total: number = this.sumar();    
     return total;
   }
   

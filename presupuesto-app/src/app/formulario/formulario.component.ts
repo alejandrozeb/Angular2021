@@ -1,7 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 import { Egreso } from '../egreso.model';
 import { EgresoService } from '../Egreso.Service';
 import { IngresoService } from '../Ingreso.Service';
+import { IngresoComponent } from '../ingreso/ingreso.component';
 import { Ingreso } from '../ingresos.model';
 
 @Component({
@@ -22,7 +24,7 @@ export class FormularioComponent implements OnInit {
   procesarForm(){
     if(this.selectForm == "ing"){
       this.agregarIngreso(this.descripcionForm, this.cantidadForm);
-    }if(this.selectForm == "eng"){
+    }else if(this.selectForm == "egr"){
       this.agregarEgreso(this.descripcionForm, this.cantidadForm);
     }else{
       alert("selecciona una opcion");
