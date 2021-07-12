@@ -198,4 +198,7 @@ asi la instacia se crea a nivel app y no solo locales en componentes
 
 ----ASSETS-----
 todos los archivos estaticos van a assets
+
+-----form---
+al agregar un form se debe añadir el name igual que el ngmodel
 */
