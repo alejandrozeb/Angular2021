@@ -16,8 +16,12 @@ export class IngresoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-   this.ingresos = this.ingresosService.ingresos;
-   console.log(this.ingresos);
+   this.ingresos = this.ingresosService.ingresos;   
+  }
+
+  eliminar(ingreso: Ingreso){
+    this.ingresosService.eliminar(ingreso);
+    
   }
 
 }

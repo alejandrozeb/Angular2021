@@ -25,14 +25,12 @@ export class AppComponent {
   ngOnInit():void{
   }
   getIngresoTotal(){
-    let ingresoTotal: number = 0;
-    ingresoTotal = this.ingresoService.total();
+    let ingresoTotal: number = this.ingresoService.total();
     return ingresoTotal;
   }  
 
   getEgresoTotal(){
-    let egresoTotal: number = 0;
-    egresoTotal = this.egresoService.total();
+    let egresoTotal: number = this.egresoService.total();
     return egresoTotal;
   }
 

@@ -21,4 +21,9 @@ export class IngresoService {
     });
     return sumatoria;
   }
+
+  eliminar(ingreso:Ingreso){
+    let index:number = this.ingresos.indexOf(ingreso);
+    this.ingresos.splice(index, 1);
+  }
 }
