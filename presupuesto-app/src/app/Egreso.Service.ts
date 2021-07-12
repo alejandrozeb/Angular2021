@@ -14,6 +14,12 @@ export class EgresoService {
   agregarEgreso(egreso:Egreso){
     this.egresos.push(egreso);
   }
+
+  eliminar(egreso:Egreso){
+    let index:number = this.egresos.indexOf(egreso);
+    this.egresos.splice(index, 1);
+  }
+
   private sumar(): number {
     let sumatoria: number = 0;
     this.egresos.forEach((egreso) => {
