@@ -209,6 +209,16 @@ si se afecta auna variables de app componente se recarga la pagina
 puedes manejar eventos que cambien la vista independiente del manejo de la data
 select
 
--------validaciones-----
+-------routing--------------
+agregaremos un modulo que manejara el app routing
+permite navegar entre paginas en angular en un componente
+/login -> /inbox
+
+los muestra dinamicamente
+agregar manualmente 
+ng g module app-routing
+
+al crear el proyecto podemos decir que si queremos manejar el routing
+
 
 */
