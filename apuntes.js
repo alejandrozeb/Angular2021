@@ -204,4 +204,11 @@ al agregar un form se debe añadir el name igual que el ngmodel
 
 ----cambios de data---
 si se afecta auna variables de app componente se recarga la pagina
+
+----eventos y logica---
+puedes manejar eventos que cambien la vista independiente del manejo de la data
+select
+
+-------validaciones-----
+
 */

@@ -12,6 +12,7 @@ import { Ingreso } from '../ingresos.model';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+  tipo:string='ing';
   selectForm:string='';
   descripcionForm:string='';
   cantidadForm:number=0;
@@ -29,6 +30,10 @@ export class FormularioComponent implements OnInit {
     }else{
       alert("selecciona una opcion");
     }
+  }
+
+  tipoOperacion(evento){
+    this.tipo = evento.target.value;
   }
 
   protected agregarIngreso(descripcion:string, cantidad:number){
