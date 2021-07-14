@@ -29,25 +29,28 @@
     </button>
   </div>
 </form> -->
-
-<form class="item">
-  <input
-    type="text"
-    name="nombre"
-    id="nombre"
-    placeholder="Nombre"
-    [(ngModel)]="nombreInput"
-  />
-  <input
+<div class="box">
+  <form class="item" #f="ngForm" (ngSubmit)="f.form.valid && onGuardarPersona()">
+    <input
       type="text"
-      name="apellido"
-      id="apellido"
-      placeholder="Apellido"
-      [(ngModel)]="apellidoInput"
+      name="nombre"
+      id="nombre"
+      placeholder="Nombre"
+      [(ngModel)]="nombreInput"
+      required
     />
-    <button 
-      type="submit"
-      (click)="agregarPersonaViewChild()">
-      +
-    </button>
-</form>
+    <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="Apellido"
+        [(ngModel)]="apellidoInput"
+        required
+      />
+      <button 
+        type="submit"
+        style="cursor: pointer;">
+        +
+      </button>
+  </form>  
+</div>

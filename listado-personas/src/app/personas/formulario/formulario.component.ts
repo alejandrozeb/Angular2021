@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { LogginService } from '../../LogginService.service';
 import { Persona } from '../../persona.model';
 import { PersonaService } from '../../personas.services';
@@ -20,7 +21,9 @@ export class FormularioComponent {
  // @ViewChild('apellidoRef') apellidoViewChild:ElementRef;
 
   constructor(private loggingService:LogginService,
-              private personasService:PersonaService){
+              private personasService:PersonaService,
+              private router:Router
+              ){
     //angular se encarga de crear una instancia
 
     this.personasService.saludar.subscribe(
@@ -53,5 +56,11 @@ export class FormularioComponent {
     //this.loggingService.enviaMensajeAConsola("enviamos persona con nombre " + persona1.nombre +" " + persona1.apellido);
     this.personasService.agregarPersona(persona1);
   } */
+
+  onGuardarPersona(){
+    let persona1 = new Persona(this.nombreInput, this.apellidoInput);
+    this.personasService.agregarPersona(persona1);
+    this.router.navigate(['personas']);
+  }
 
 }
