@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LogginService } from '../../LogginService.service';
 import { Persona } from '../../persona.model';
 import { PersonaService } from '../../personas.services';
@@ -9,12 +9,14 @@ import { PersonaService } from '../../personas.services';
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css'],
 })
-export class FormularioComponent {
+export class FormularioComponent implements OnInit {
   //decorador a padre
  // @Output() personaCreada= new EventEmitter<Persona>();
   //debe ser de angular el event emitter
   nombreInput:string = '';
   apellidoInput:string = '';
+
+  index: number;
 
   //decorador local reference
   //@ViewChild('nombreRef') nombreViewChild:ElementRef;
@@ -22,7 +24,8 @@ export class FormularioComponent {
 
   constructor(private loggingService:LogginService,
               private personasService:PersonaService,
-              private router:Router
+              private router:Router,
+              private route: ActivatedRoute
               ){
     //angular se encarga de crear una instancia
 
@@ -31,6 +34,18 @@ export class FormularioComponent {
     );
 
     //nos suscribimo al emisor
+  }
+
+  ngOnInit(){
+    //recibimos el parametro de la vista
+
+    this.index = this.route.snapshot.params['id'];
+    if(this.index){
+      let persona:Persona = this.personasService.encontrarPersona(this.index);
+      //llenamos los campos
+      this.nombreInput = persona.nombre;
+      this.apellidoInput = persona.apellido;
+    }
   }
 
   agregarPersona(nombreRef:HTMLInputElement, apellidoRef:HTMLInputElement){
@@ -59,7 +74,13 @@ export class FormularioComponent {
 
   onGuardarPersona(){
     let persona1 = new Persona(this.nombreInput, this.apellidoInput);
-    this.personasService.agregarPersona(persona1);
+
+    if(this.index){
+      //edicion
+      this.personasService.modificarPersona( this.index, persona1);
+    }else{  
+      this.personasService.agregarPersona(persona1);
+    }
     this.router.navigate(['personas']);
   }
 
