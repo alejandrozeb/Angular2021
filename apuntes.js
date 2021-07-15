@@ -225,4 +225,7 @@ dos rutas son hijas
 
 en las rutas hijas se cargan directamente los componentes ya no cambia de ruta
 
+-----errores----
+debe ser el ulitmo de las rutas
+
 */
