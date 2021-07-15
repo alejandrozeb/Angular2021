@@ -220,5 +220,9 @@ ng g module app-routing
 
 al crear el proyecto podemos decir que si queremos manejar el routing
 
+----child routes------
+dos rutas son hijas
+
+en las rutas hijas se cargan directamente los componentes ya no cambia de ruta
 
 */
