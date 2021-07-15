@@ -17,7 +17,7 @@ export class FormularioComponent implements OnInit {
   apellidoInput:string = '';
 
   index: number;
-
+  modoEdicion:number;
   //decorador local reference
   //@ViewChild('nombreRef') nombreViewChild:ElementRef;
  // @ViewChild('apellidoRef') apellidoViewChild:ElementRef;
@@ -40,7 +40,9 @@ export class FormularioComponent implements OnInit {
     //recibimos el parametro de la vista
 
     this.index = this.route.snapshot.params['id'];
-    if(this.index){
+    this.modoEdicion = +this.route.snapshot.queryParams['modoEdicion'];
+    //convierte a tipo entero
+    if(this.modoEdicion != null && this.modoEdicion === 1){
       let persona:Persona = this.personasService.encontrarPersona(this.index);
       //llenamos los campos
       this.nombreInput = persona.nombre;
@@ -75,7 +77,7 @@ export class FormularioComponent implements OnInit {
   onGuardarPersona(){
     let persona1 = new Persona(this.nombreInput, this.apellidoInput);
 
-    if(this.index){
+    if(this.modoEdicion != null && this.modoEdicion === 1){
       //edicion
       this.personasService.modificarPersona( this.index, persona1);
     }else{  

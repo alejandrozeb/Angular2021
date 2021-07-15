@@ -2,7 +2,9 @@
   <ul>
     <li>
       <!-- router link -->
-        <a [routerLink]="['/personas', indice]">
+        <a [routerLink]="['/personas', indice]"
+            [queryParams]="{modoEdicion: '1'}"
+        >
           {{persona.nombre}}{{persona.apellido}}
         </a>
     </li>
