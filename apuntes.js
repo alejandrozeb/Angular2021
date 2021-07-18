@@ -259,7 +259,17 @@ https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/0
 en firebase podemos ver que se 0 es el identificador de ese registro
 
 
-----AUTENTICACION CON ANGULAR------
+----AUTENTICACION CON FIREBASE------
+
+entramos a seccion de autenticacion
+
+habilitamos el email/password
+luego revisamos las reglas de nuestra bd 
+auth != null 
+añadimos a read y write
+generamos un token para autenticarnos con la app
+
+debemos crear un usuario en autenticacion para poder ingresar a la aplicacion
 
 
 */
