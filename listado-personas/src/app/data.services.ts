@@ -35,8 +35,17 @@ export class DataServices{
             .subscribe(
                 response => console.log("resultado modificar Persona" + response),
                 error => console.log("error en modificar la persona"+ error)
+            );  
+    }
+
+    eliminarPersona(index: number){
+        let url: string ="";
+        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json';
+        this.httpClient.delete(url)
+            .subscribe(
+                response => console.log("resultado eliminar Persona" + response),
+                error => console.log("error en eliminar la persona"+ error)
             );
-            
     }
     
 }
