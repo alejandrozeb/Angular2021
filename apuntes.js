@@ -244,4 +244,12 @@ cramos la bd en modo test.
 https://listado-personas-74bcf-default-rtdb.firebaseio.com/
 
 con este link podemos realizar las operaciones
+debemos manejar el concepto de subscribe.
+
+POSt por cada peticion post se agrega de nuevo toda la informacion.
+
+PUT pone un recurso en la dirección especificada en la URL. Exactamente en esa dirección. Si no existe, lo crea, si existe lo reemplaza.
+
+
+
 */

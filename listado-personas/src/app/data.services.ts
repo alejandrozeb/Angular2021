@@ -12,7 +12,7 @@ export class DataServices{
 
     guardarPersona(personas: Persona[]){
         //enviando un post
-        this.httpClient.post('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json', personas).subscribe(
+        this.httpClient.put('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json', personas).subscribe(
             //aqui recibioms la respuesta
             response => {
                 console.log('resultado de la consulta: ' + response);
