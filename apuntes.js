@@ -257,4 +257,9 @@ modificar
 https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/0
 
 en firebase podemos ver que se 0 es el identificador de ese registro
+
+
+----AUTENTICACION CON ANGULAR------
+
+
 */
