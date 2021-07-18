@@ -22,7 +22,7 @@ export class DataServices{
     }
 
     cargarPersonas(){
-        return this.httpClient.get('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json');
+        return this.httpClient.get<Persona[]>('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json');
     }
     
 }

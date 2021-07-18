@@ -6,11 +6,7 @@ import { Persona } from "./persona.model";
 @Injectable()
 //inyecta una nstacia de logginService
 export class PersonaService{
-    personas: Persona[] = [
-        new Persona("Juan","Perez"),
-        new Persona("Laura","Juarez"),
-        new Persona("Alejandro","Zeballos")
-      ];
+    personas: Persona[] = [];
     //comunicacion entre componentes
     saludar = new EventEmitter<number>();
 
@@ -21,12 +17,21 @@ export class PersonaService{
     
     agregarPersona(persona: Persona){
         this.logginService.enviaMensajeAConsola("Agregamos perosna: "+persona.nombre+" " + persona.apellido);
+        
+        if(this.personas == null){
+            this.personas = [];
+        }
+
         this.personas.push(persona);
         this.dataServices.guardarPersona(this.personas);
     }
 
     obtenerPersonas(){
         return this.dataServices.cargarPersonas();
+    }
+
+    setPersonas(personas: Persona[]){
+        this.personas = personas;
     }
 
     encontrarPersona(index: number){
