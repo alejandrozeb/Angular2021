@@ -19,8 +19,10 @@ export class DataServices{
             },
             error => console.log("Error al guardar Personas" + error)
         )
+    }
 
-
+    cargarPersonas(){
+        return this.httpClient.get('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json');
     }
     
 }

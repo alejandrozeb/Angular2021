@@ -250,6 +250,6 @@ POSt por cada peticion post se agrega de nuevo toda la informacion.
 
 PUT pone un recurso en la dirección especificada en la URL. Exactamente en esa dirección. Si no existe, lo crea, si existe lo reemplaza.
 
-
+GEt al realizar la peticion devuelve un observable, un buen para procesar la data es la vista el componente como tal
 
 */

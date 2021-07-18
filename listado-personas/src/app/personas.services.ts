@@ -18,10 +18,15 @@ export class PersonaService{
     //inyectando un servicio
 
     constructor(private logginService: LogginService, private dataServices: DataServices ){    }
+    
     agregarPersona(persona: Persona){
         this.logginService.enviaMensajeAConsola("Agregamos perosna: "+persona.nombre+" " + persona.apellido);
         this.personas.push(persona);
         this.dataServices.guardarPersona(this.personas);
+    }
+
+    obtenerPersonas(){
+        return this.dataServices.cargarPersonas();
     }
 
     encontrarPersona(index: number){
