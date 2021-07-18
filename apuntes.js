@@ -228,4 +228,20 @@ en las rutas hijas se cargan directamente los componentes ya no cambia de ruta
 -----errores----
 debe ser el ulitmo de las rutas
 
+----firebase---------
+Usaremos como bd para nuestro proyecto
+debemos loggear con una cuenta gmail
+abrimos la consola
+
+es gratutita hasta algunos limites.
+consola-> add project (damos un nombre)-> siguente acepamos condiciones y espermos a que se pueda crear el proyecto -> 
+
+dos tipos de bd 
+realdatatime database o could firestore usaremosla primera
+
+cramos la bd en modo test.
+
+https://listado-personas-74bcf-default-rtdb.firebaseio.com/
+
+con este link podemos realizar las operaciones
 */
