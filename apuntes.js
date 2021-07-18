@@ -252,4 +252,9 @@ PUT pone un recurso en la dirección especificada en la URL. Exactamente en esa 
 
 GEt al realizar la peticion devuelve un observable, un buen para procesar la data es la vista el componente como tal
 
+
+modificar
+https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/0
+
+en firebase podemos ver que se 0 es el identificador de ese registro
 */

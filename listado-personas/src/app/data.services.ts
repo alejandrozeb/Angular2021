@@ -24,5 +24,19 @@ export class DataServices{
     cargarPersonas(){
         return this.httpClient.get<Persona[]>('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json');
     }
+
+    modificarPersona(index: number, persona: Persona){
+        let url: string ="";
+        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json';
+
+        //siempre debe terminar en .json
+
+        this.httpClient.put(url, persona)
+            .subscribe(
+                response => console.log("resultado modificar Persona" + response),
+                error => console.log("error en modificar la persona"+ error)
+            );
+            
+    }
     
 }
