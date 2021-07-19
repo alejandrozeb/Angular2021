@@ -270,6 +270,8 @@ añadimos a read y write
 generamos un token para autenticarnos con la app
 
 debemos crear un usuario en autenticacion para poder ingresar a la aplicacion
-
+ 
+------instalar firebase------
+npm install --save firebase
 
 */
