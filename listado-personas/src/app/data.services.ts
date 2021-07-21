@@ -1,6 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 //para que pueda ser inyectado debemos usar el decorador injectable
 import { Injectable } from '@angular/core';
+import { LoginService } from './login/login.service';
 import { Persona } from './persona.model';
 
 @Injectable()
@@ -8,7 +9,7 @@ export class DataServices{
     //estlabe comunicacion con la bd 
     //usamos httpclient para realizar las peticiones
     
-    constructor(private httpClient: HttpClient){}
+    constructor(private httpClient: HttpClient, private loginService: LoginService){}
 
     guardarPersona(personas: Persona[]){
         //enviando un post
@@ -22,7 +23,8 @@ export class DataServices{
     }
 
     cargarPersonas(){
-        return this.httpClient.get<Persona[]>('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json');
+        const token = this.loginService.getIdToken();
+        return this.httpClient.get<Persona[]>('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json?auth='+token);
     }
 
     modificarPersona(index: number, persona: Persona){

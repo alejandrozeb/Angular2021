@@ -274,4 +274,15 @@ debemos crear un usuario en autenticacion para poder ingresar a la aplicacion
 ------instalar firebase------
 npm install --save firebase
 
+con httpclient se registra en dataservices
+y tenemos que registrar el service de login en el archivo dataservices
+
+
+token
+
+'https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json?auth='+token
+
+usamos de esta forma el token para autenticarnos en cada request
+
+
 */
