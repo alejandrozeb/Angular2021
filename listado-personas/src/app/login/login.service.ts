@@ -28,4 +28,8 @@ export class LoginService{
         return this.token;
     }
 
+    isAutenticado(){
+        return this.token != null;
+    }
+
 }
