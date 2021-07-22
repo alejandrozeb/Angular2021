@@ -12,8 +12,9 @@ export class DataServices{
     constructor(private httpClient: HttpClient, private loginService: LoginService){}
 
     guardarPersona(personas: Persona[]){
+        const token = this.loginService.getIdToken();
         //enviando un post
-        this.httpClient.put('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json', personas).subscribe(
+        this.httpClient.put('https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos.json?auth=' + token, personas).subscribe(
             //aqui recibioms la respuesta
             response => {
                 console.log('resultado de la consulta: ' + response);
@@ -28,8 +29,9 @@ export class DataServices{
     }
 
     modificarPersona(index: number, persona: Persona){
+        const token = this.loginService.getIdToken();
         let url: string ="";
-        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json';
+        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json?auth='+ token;
 
         //siempre debe terminar en .json
 
@@ -41,8 +43,9 @@ export class DataServices{
     }
 
     eliminarPersona(index: number){
+        const token = this.loginService.getIdToken();
         let url: string ="";
-        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json';
+        url = "https://listado-personas-74bcf-default-rtdb.firebaseio.com/datos/"+ index + '.json?auth='+token;
         this.httpClient.delete(url)
             .subscribe(
                 response => console.log("resultado eliminar Persona" + response),
