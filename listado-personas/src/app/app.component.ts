@@ -20,7 +20,8 @@ export class AppComponent implements OnInit {
   }
 
   isAutenticado(){
-    this.loginService.isAutenticado();
+    return this.loginService.isAutenticado();
+    
   }
   salir() {
 
