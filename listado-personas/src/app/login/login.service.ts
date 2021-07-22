@@ -4,7 +4,7 @@ import firebase from "firebase/app";
 
 @Injectable()
 export class LoginService{
-    token: string;
+    token: string|null;
 
     constructor(private router: Router){    }
 
@@ -30,6 +30,20 @@ export class LoginService{
 
     isAutenticado(){
         return this.token != null;
+    }
+
+    logout(){
+        firebase.auth().signOut().then(
+            ()=>{
+                this.token = null;
+                this.router.navigate(['login']);
+            }
+        ).catch(
+            (error)=>{
+                console.log(error);
+                
+            }
+        );
     }
 
 }

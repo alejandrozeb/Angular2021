@@ -24,6 +24,6 @@ export class AppComponent implements OnInit {
     
   }
   salir() {
-
+    this.loginService.logout();
   }
 }
