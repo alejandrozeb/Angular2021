@@ -5,10 +5,11 @@ import { PersonasComponent } from './personas/personas.component';
 import { FormularioComponent } from './personas/formulario/formulario.component';
 import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './login/login.component';
+import { LoginGuardian } from './login/login.guardian.service';
 
 const routes: Routes=[
-  {path: '', component: PersonasComponent},//se despliega en el index principal
-  {path: 'personas', component: PersonasComponent, children:[
+  {path: '', component: PersonasComponent, canActivate:[LoginGuardian]},//se despliega en el index principal
+  {path: 'personas', component: PersonasComponent, canActivate:[LoginGuardian],children:[
     //la / se agrega solo /personas
     {path: 'agregar', component:   FormularioComponent},
     {path: ':id', component: FormularioComponent}

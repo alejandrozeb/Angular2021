@@ -289,5 +289,11 @@ evitan el ingreso a paginas que solo se pueden ver despues del login
 
 creasmo el servicio y añadimos las clases qeu usaremos para este behavior
 
+implmentamos el guradian en el app routing funcona como un midlleware
+
+ademos podemos tener mas de un guardian
+
+
+
 
 */
