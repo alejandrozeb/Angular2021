@@ -284,5 +284,10 @@ token
 
 usamos de esta forma el token para autenticarnos en cada request
 
+-----GUARDIANES---------------------
+evitan el ingreso a paginas que solo se pueden ver despues del login
+
+creasmo el servicio y añadimos las clases qeu usaremos para este behavior
+
 
 */
