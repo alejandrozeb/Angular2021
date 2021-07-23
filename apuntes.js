@@ -293,7 +293,26 @@ implmentamos el guradian en el app routing funcona como un midlleware
 
 ademos podemos tener mas de un guardian
 
+---produccion-----------------------
+no podemos publicar la informacion por que es muy grande pero debemos copilar la pagina
+
+ng build --prod --aot
+
+genera una carpeta llamada dist
+esta pensado a nivel raiz de uns ervidor
+
+ng build --prod --aot --base-href /listado-personas/
+asi desplegamos en una carpeta debemos especificar el nombre de la app
 
 
+error budget debemos modificar el angularjson
 
+"budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+
+ investigar acerca de estos limites!!!               
 */
