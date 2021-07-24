@@ -314,5 +314,28 @@ error budget debemos modificar el angularjson
                   "maximumError": "5mb"
                 }
 
- investigar acerca de estos limites!!!               
+ investigar acerca de estos limites!!!      
+ 
+ ---produccion en firebase-----
+usamos la seccion de hosting en la pagina de firebase en nuestro proyecto ya creado
+
+npm install -g firebase-tools
+
+debemos instalar primero este package de firebase
+se instala de manera global
+
+firebase login
+ingresamos a nustra cuenta de google con la que creamoms en firebase
+
+firebase init
+damos y
+elegimos la opciones de hosting  Y DATABASE
+
+luego debemos seleccionar
+existing project
+elegimos nuestro proyecto
+
+nos pregunta por la configuracion de database rules y  database.json dejamos que sea por default.
+ nos pregunta la integracion con github por ahora no los usaremos
+
 */
