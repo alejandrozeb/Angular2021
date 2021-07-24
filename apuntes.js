@@ -338,4 +338,18 @@ elegimos nuestro proyecto
 nos pregunta por la configuracion de database rules y  database.json dejamos que sea por default.
  nos pregunta la integracion con github por ahora no los usaremos
 
+ en fibase.josn
+ "public": "dist/listado-personas",
+
+ configuramos la ruta del proyecto por que tenemos una subcarptea
+
+ firebase deploy
+
+ hace el deploy de nustra aplicacion
+
+ firebase open hosting:site
+
+ para brir el sitio desde e navegador o podemos ingresar a la URL.
+ tambien podemos ver los dominios en la seccion de hosting de firebase
+ https://listado-personas-74bcf.web.app/login
 */
