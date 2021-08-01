@@ -352,4 +352,15 @@ nos pregunta por la configuracion de database rules y  database.json dejamos que
  para brir el sitio desde e navegador o podemos ingresar a la URL.
  tambien podemos ver los dominios en la seccion de hosting de firebase
  https://listado-personas-74bcf.web.app/login
+
+-----PROYECTO 2----------------------
+se creara un nuevo proyecto en firebas llamado control-clientes
+
+en este caso usaremos cloud firestore
+
+creamos la bd en modo prueba luego creamos las colecciones 
+clientes
+         nombre,apellido,mail,saldo       
+Configuracion
+        permitirRegistro
 */
