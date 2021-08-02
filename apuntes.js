@@ -363,4 +363,14 @@ clientes
          nombre,apellido,mail,saldo       
 Configuracion
         permitirRegistro
+
+creamos el proyecto control clientes
+ng new control-clientes 
+indicamos que vamos a usar el routing de angular y con css
+
+usaremos bootstrap
+npm i bootstrap jquery popper.js --save
+
+y agregamos al angular.json
+
 */
