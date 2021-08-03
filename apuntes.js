@@ -379,5 +379,13 @@ este modulo nos ayuda a conectar mas facil la bd en firestore con nuetra aplicac
 npm install angular2-flash-messages --save
 nos yuadara para manejar mensajes
 
+<app-cabecero></app-cabecero>
+
+<router-outlet></router-outlet>
+
+<app-pie-pagina></app-pie-pagina>
+
+de este modo el header y el pie de pagina no cambian
+la pagina va variando su contenido con el router 
 
 */
