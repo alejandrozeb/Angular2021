@@ -373,4 +373,11 @@ npm i bootstrap jquery popper.js --save
 
 y agregamos al angular.json
 
+npm install firebase @angular/fire --save
+este modulo nos ayuda a conectar mas facil la bd en firestore con nuetra aplicacion
+
+npm install angular2-flash-messages --save
+nos yuadara para manejar mensajes
+
+
 */
