@@ -388,4 +388,8 @@ nos yuadara para manejar mensajes
 de este modo el header y el pie de pagina no cambian
 la pagina va variando su contenido con el router 
 
+
+-----Configurando firestore-----------
+debemos modificar  el archivo enviroment
+
 */
