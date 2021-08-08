@@ -394,4 +394,13 @@ debemos modificar  el archivo enviroment
 ademas en firestore buscamos configuracion y añadimos el proyecto para generar las credenciales como el apikey y otras propiedades.
  tambien copiamos al enviroment de produccion
 
+ -----imporatciones a app module-----
+ import { environment } from '../environments/environment';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFirestoreModule, Settings} from '@angular/fire/firestore';
+import {AngularFireAuth} from '@angular/fire/auth';
+import {FlashMessagesModule} from 'angular2-flash-messages';
+import { FormsModule } from '@angular/forms';
+
+
 */
