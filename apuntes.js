@@ -391,5 +391,7 @@ la pagina va variando su contenido con el router
 
 -----Configurando firestore-----------
 debemos modificar  el archivo enviroment
+ademas en firestore buscamos configuracion y añadimos el proyecto para generar las credenciales como el apikey y otras propiedades.
+ tambien copiamos al enviroment de produccion
 
 */
