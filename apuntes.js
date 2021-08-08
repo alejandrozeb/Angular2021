@@ -402,5 +402,12 @@ import {AngularFireAuth} from '@angular/fire/auth';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import { FormsModule } from '@angular/forms';
 
+al recuperar los docmuentos en firestore debemos tner cuidado por que el id y la informacion del doc estan separados
+
+id->data
+doc->doclow o payload
+
+
+
 
 */
