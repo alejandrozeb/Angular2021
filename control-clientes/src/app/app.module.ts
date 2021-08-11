@@ -21,6 +21,7 @@ import { ConfiguracionComponent } from './componentes/configuracion/configuracio
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
 import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.component';
 import { importExpr } from '@angular/compiler/src/output/output_ast';
+import { clienteServicio } from './servicios/cliente.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { importExpr } from '@angular/compiler/src/output/output_ast';
     FormsModule,
     FlashMessagesModule
   ],
-  providers: [],
+  providers: [clienteServicio],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
