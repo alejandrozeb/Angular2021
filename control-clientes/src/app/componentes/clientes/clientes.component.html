@@ -1,115 +1,132 @@
 <!--- Botones -->
 <section id="actions" class="py-4 mb-4 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#agregarClienteModal">
-                    <i class="fas fa-plus"></i> Agregar Cliente
-                </a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a
+          href="#"
+          class="btn btn-primary btn-block"
+          data-bs-toggle="modal"
+          data-bs-target="#agregarClienteModal"
+        >
+          <i class="fas fa-plus"></i> Agregar Cliente
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="clientes">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Listado de Clientes</h4>
-                    </div>
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>#</th>
-                                <th>Nombre</th>
-                                <th>Saldo</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr *ngFor="let cliente of clientes; let i = index">
-                                <td>{{i+1}}</td>
-                                <td>{{cliente.nombre}}</td>
-                                <td>{{cliente.apellido}}</td>
-                                <td>{{cliente.saldo | currency: 'MNX': '$'}}</td>
-                                <td>
-                                    <a routerLink="/cliente/editar/{{cliente.id}}" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Editar
-                                </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- tarjetas laterales -->
-            <div class="col-md-3">
-                <div class="card text-center bg-danger text-white mb-3">
-                    <div class="card-body">
-                        <h3>Saldo Total</h3>
-                        <h4 class="display-4">
-                            {{getSaldoTotal() | currency:'MNX':'$'}}
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card text-center bg-success text-white mb-3">
-                    <div class="card-body">
-                        <h3>Total Clientes</h3>
-                        <h4 class="display-4">
-                            <i class="fas fa-users"></i>{{clientes?.length}}
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <!-- final -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h4>Listado de Clientes</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Saldo</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let cliente of clientes; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ cliente.nombre }}</td>
+                <td>{{ cliente.apellido }}</td>
+                <td>{{ cliente.saldo | currency: "MNX":"$" }}</td>
+                <td>
+                  <a
+                    routerLink="/cliente/editar/{{ cliente.id }}"
+                    class="btn btn-secondary"
+                  >
+                    <i class="fas fa-angle-double-right"></i> Editar
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </div>
-</section>
+      </div>
 
+      <!-- tarjetas laterales -->
+      <div class="col-md-3">
+        <div class="card text-center bg-danger text-white mb-3">
+          <div class="card-body">
+            <h3>Saldo Total</h3>
+            <h4 class="display-4">
+              {{ getSaldoTotal() | currency: "MNX":"$" }}
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center bg-success text-white mb-3">
+          <div class="card-body">
+            <h3>Total Clientes</h3>
+            <h4 class="display-4">
+              <i class="fas fa-users"></i>{{ clientes?.length }}
+            </h4>
+          </div>
+        </div>
+      </div>
+      <!-- final -->
+    </div>
+  </div>
+</section>
 
 <!-- agregar cliente Modal -->
 <div class="modal fade" id="agregarClienteModal">
-    <div class="modal-dialog modl-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <h5 class="modal-title">Agregar Cliente </h5>
-                <button class="close" data-bs-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title">Agregar Cliente</h5>
+        <button class="close" data-bs-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
 
-            <form>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="saldo">Saldo</label>
-                        <input type="number" name="saldo" class="form-control">
-                    </div>
-                </div>
+      <!-- mensaje con flash -->
+      <flash-messages></flash-messages>
 
-                <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Guardar</button>
-                </div>
-            </form>
+      <form #clienteFrom="ngForm" (ngSubmit)="agregar(clienteForm)">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                name="nombre" 
+                class="form-control" 
+                #nombre="ngModel"
+                [(ngModel)]="cliente.nombre"
+                [ngClass] = "{'is-invalid': nombre.errors && nombre.touched}"
+                required
+                minlength="2"
+                />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="saldo">Saldo</label>
+            <input type="number" name="saldo" class="form-control" />
+          </div>
         </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="submit">Guardar</button>
+        </div>
+      </form>
     </div>
-
+  </div>
 </div>
-
