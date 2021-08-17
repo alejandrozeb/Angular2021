@@ -108,6 +108,12 @@
                 required
                 minlength="2"
                 />
+                <div [hidden]="!nombre.errors?.required" class="invalid-feedback">
+                  Nombre requerido
+                </div>
+                <div [hidden]="!nombre.errors?.minlength" class="invalid-feedback">
+                  Debe contener al menos 2 caracteres
+                </div>
           </div>
           <div class="form-group">
             <label for="apellido">Apellido</label>
