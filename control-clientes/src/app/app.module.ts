@@ -5,7 +5,7 @@ import { environment } from '../environments/environment';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule, Settings} from '@angular/fire/firestore';
 import {AngularFireAuthModule} from '@angular/fire/auth';
-import {FlashMessagesModule} from 'angular2-flash-messages';
+import {FlashMessagesModule, FlashMessagesService} from 'angular2-flash-messages';
 import { FormsModule } from '@angular/forms';
 
 
@@ -43,7 +43,7 @@ import { clienteServicio } from './servicios/cliente.service';
     AngularFireModule,
     AngularFireAuthModule,
     FormsModule,
-    FlashMessagesModule
+    FlashMessagesModule.forRoot()
   ],
   providers: [clienteServicio],
   bootstrap: [AppComponent]
