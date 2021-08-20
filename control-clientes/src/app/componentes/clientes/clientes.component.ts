@@ -50,7 +50,12 @@ export class ClientesComponent implements OnInit {
     }
     else{
       //agregar un nuevo cliene
+      this.clientesServicio.agregarCliente(value);
     }
+  }
+
+  agregarCliente(value){
+
   }
 
 }
